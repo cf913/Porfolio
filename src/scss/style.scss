@@ -311,6 +311,24 @@ body {
   }
 }
 
+@media(max-width:480px){
+  #main-header {
+    .profile-pic {
+      display: none;
+    }
+    .p-5.bg-dark.text-white.name-and-links {
+      padding: 20px 10px !important;
+      .profile-name {
+        font-size: 1.6em;
+      }
+    }
+
+    .port-item {
+      font-size: 0.7em;
+    }
+  }
+}
+
 /* ANIMATIONS */
 @keyframes slideInFromLeft {
   0% {
