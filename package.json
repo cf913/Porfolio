@@ -1,12 +1,15 @@
 {
-  "name": "bs4starter",
+  "name": "porfolio",
   "version": "1.0.0",
-  "description": "Bootstrap 4 workflow",
-  "main": "index.js",
-  "scripts": {
-    "start": "gulp"
+  "description": "Chad Fallotin Profolio",
+  "main": "app.js",
+  "engines": {
+    "node": "8.4.0"
   },
-  "author": "Brad Traversy",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "Chad FALLOTIN",
   "license": "MIT",
   "dependencies": {
     "body-parser": "^1.18.2",
