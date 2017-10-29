@@ -20,6 +20,12 @@ app.use(express.static(path.join(__dirname, 'src')))
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname + '/src/index.html'));
 })
+
+app.get('/download', function(req, res, next){
+    var file = __dirname + '/src/mockCV.txt' // Add actual RESUME.pdf
+    res.download(file) // Set disposition and send it.
+})
+
 app.get('/*', (req, res) => {
     res.redirect('/')
 })
