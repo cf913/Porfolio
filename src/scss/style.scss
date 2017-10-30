@@ -18,6 +18,7 @@ body {
 .card {
   border: none;
 }
+
 #main-header{
 
   .name-and-links {
@@ -100,10 +101,19 @@ body {
   font-size: 0.4em;
 }
 
-.small-date {
+.small-date, .small-date-right {
   font-size: 0.6em;
   font-weight: 100;
 }
+
+.small-date-right {
+  position:relative;
+  float:right;
+  top: 8px;
+  font-weight: 400;
+  color: rgba(0,0,0,0.50);
+}
+
 
 // HOME //
 
@@ -181,12 +191,14 @@ body {
 
     ul.front {
       padding: 10px;
-      border: 3px solid #1EA3EE;
+      border: 2px solid rgb(30, 163, 238);
+      background: rgba(30, 163, 238, 0.05);
     }
 
     ul.back {
       padding: 10px;
-      border: 3px solid orange;
+      border: 2px solid rgb(255, 165, 0);
+      background: rgba(255,165,0,0.05);
     }
   }
 }
@@ -201,6 +213,34 @@ body {
   .card {
     padding-left: 50px;
     padding-right: 50px;
+  }
+
+  .card-deck .card {
+    padding: 0;
+    margin: 0 10px;
+    border: 2px solid #0D55A1;
+    border-radius: 5px;
+
+    .card-header, .card-footer {
+      color: white;
+      text-align: center;
+      background: #0D55A1;
+      border: none;
+      padding: 5px 10px; 
+      small.text-muted {
+        color: white !important;
+      }
+    }
+
+    .card-footer {
+      text-align: right;
+    }
+    .card-title {
+      font-size: 1.5em; 
+    }
+    .card-body {
+      font-size: 0.9em;
+    }
   }
 
   .edu {
@@ -225,7 +265,7 @@ body {
     transition: 0.2s ease-in-out;
   }
 
-  li a:hover{
+  li a:hover {
     color: rgb(31, 194, 36);
     transform: translateX(5%);
   }
@@ -248,15 +288,29 @@ body {
   a.github {
     color: lightblue;
   }
+
+  .hide {
+    display: none;
+  }
+  .show {
+    display: block;
+  }
+  #map {
+    margin-bottom: 30px;
+    width: 100%;
+    height: 600px;
+    border-radius: 10px;
+  }
+
 }
 
 #work {
   .bg-warning{
-    color: #f4f4f4;
+    color: white;
   }
 
   .projects {
-    color: #f4f4f4;
+    color: white;
     background: linear-gradient(150deg, rgb(28, 81, 122) 0%,rgb(9, 9, 37) 50%, rgb(24, 54, 61) 100%);
     // background-color: rgb(10, 10, 37);
 
@@ -325,6 +379,24 @@ body {
 
     .port-item {
       font-size: 0.7em;
+    }
+  }
+
+  #resume {
+    h3 {
+      text-align: center;
+    }
+    .card.education {
+      padding: 30px; 
+    }
+    .card.job{
+      padding: 5px;
+    }
+
+    .card-deck {
+      .card {
+        margin-bottom: 20px;
+      }
     }
   }
 }

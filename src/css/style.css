@@ -75,9 +75,16 @@ body {
 .date-title {
   font-size: 0.4em; }
 
-.small-date {
+.small-date, .small-date-right {
   font-size: 0.6em;
   font-weight: 100; }
+
+.small-date-right {
+  position: relative;
+  float: right;
+  top: 8px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.5); }
 
 .card .asicon {
   position: relative;
@@ -139,11 +146,13 @@ body {
 
 .card .skill-list ul.front {
   padding: 10px;
-  border: 3px solid #1EA3EE; }
+  border: 2px solid #1ea3ee;
+  background: rgba(30, 163, 238, 0.05); }
 
 .card .skill-list ul.back {
   padding: 10px;
-  border: 3px solid orange; }
+  border: 2px solid orange;
+  background: rgba(255, 165, 0, 0.05); }
 
 .skill-summary {
   background-color: #033658; }
@@ -151,6 +160,26 @@ body {
 #resume .card {
   padding-left: 50px;
   padding-right: 50px; }
+
+#resume .card-deck .card {
+  padding: 0;
+  margin: 0 10px;
+  border: 2px solid #0D55A1;
+  border-radius: 5px; }
+  #resume .card-deck .card .card-header, #resume .card-deck .card .card-footer {
+    color: white;
+    text-align: center;
+    background: #0D55A1;
+    border: none;
+    padding: 5px 10px; }
+    #resume .card-deck .card .card-header small.text-muted, #resume .card-deck .card .card-footer small.text-muted {
+      color: white !important; }
+  #resume .card-deck .card .card-footer {
+    text-align: right; }
+  #resume .card-deck .card .card-title {
+    font-size: 1.5em; }
+  #resume .card-deck .card .card-body {
+    font-size: 0.9em; }
 
 #resume .edu {
   color: #f4f4f4;
@@ -190,11 +219,23 @@ body {
 #resume a.github {
   color: lightblue; }
 
+#resume .hide {
+  display: none; }
+
+#resume .show {
+  display: block; }
+
+#resume #map {
+  margin-bottom: 30px;
+  width: 100%;
+  height: 600px;
+  border-radius: 10px; }
+
 #work .bg-warning {
-  color: #f4f4f4; }
+  color: white; }
 
 #work .projects {
-  color: #f4f4f4;
+  color: white;
   background: linear-gradient(150deg, #1c517a 0%, #090925 50%, #18363d 100%); }
   #work .projects .card {
     margin: 20px;
@@ -235,7 +276,15 @@ body {
     #main-header .p-5.bg-dark.text-white.name-and-links .profile-name {
       font-size: 1.6em; }
   #main-header .port-item {
-    font-size: 0.7em; } }
+    font-size: 0.7em; }
+  #resume h3 {
+    text-align: center; }
+  #resume .card.education {
+    padding: 30px; }
+  #resume .card.job {
+    padding: 5px; }
+  #resume .card-deck .card {
+    margin-bottom: 20px; } }
 
 /* ANIMATIONS */
 @keyframes slideInFromLeft {

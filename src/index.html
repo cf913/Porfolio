@@ -22,9 +22,10 @@
             <div class="p-5 bg-dark text-white name-and-links">
               <div class="name d-flex flex-row justify-content-between align-items-center">
                 <h1 class="display-4 profile-name">Chad Fallotin</h1>
-                <div class="links"><a href=""><i class="fa fa-facebook"></i></a></div>
-                <div class="links"><a href="https://github.com/joeharper1000"><i class="fa fa-github"></i></a></div>
-                <div class="links"><a href=""><i class="fa fa-steam"></i></a></div>
+                <div class="links"><a target="_blank" href=""><i class="fa fa-facebook"></i></a></div>
+                <div class="links"><a target="_blank" title="GitHub" href="https://github.com/joeharper1000"><i class="fa fa-github"></i></a></div>
+                <div class="links"><a target="_blank" title="GitLab" href="https://gitlab.com/joeharper1000"><i class="fa fa-gitlab"></i></a></div>
+                <div class="links"><a target="_blank" href=""><i class="fa fa-steam"></i></a></div>
 
               </div>
             </div>
@@ -199,7 +200,7 @@
 
     <!-- RESUME -->
     <div id="resume" class="collapse">
-      <div class="card card-body bg-success text-white py-5">
+      <div class="card card-body bg-success text-white py-5 education">
         <h2 class="text-center">Education</h2>
         <br>
         
@@ -267,14 +268,97 @@
 
       </div>
 
-      <div class="card card-body py-5">
+      <div class="card card-body py-5 job">
         <h3>Where have I worked?</h3>
-        <p><em>Classified</em></p>
+        <hr>
+        <div class="card-deck">
+            <div class="card">
+              <div class="card-header">June 2017 - Present</div>
+              <div class="card-body">
+                <h4 class="card-title">Giomo&amp;Co</h4>
+                  <h6 class="card-subtitle mb-2 text-muted clearfix">Co-Founder</h6>
+                  <p class="card-text">
+                    <ul>
+                      <li>Online Store</li>
+                      <li>SEO</li>
+                      <li>Social Media Advertising</li>  
+                    </ul>
+                  </p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">Brisbane, Australia</small>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header">Nov 2016 - March 2017</div>
+              <div class="card-body">
+                  <h4 class="card-title">The Computer Market</h4>
+                    <h6 class="card-subtitle mb-2 text-muted clearfix">IT Technician/Consultant</h6>
+                <p class="card-text">
+                  <ul>
+                    <li>System repair / refurbishing</li>
+                    <li>Monitor the upgrade process of large organisations’ IT systems.</li>
+                  </ul>
+                </p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">Brisbane, Australia</small>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header">Summer 2014 - 2016</div>
+              <div class="card-body">
+                  <h4 class="card-title">Isla Samba</h4>
+                    <h6 class="card-subtitle mb-2 text-muted clearfix">Salesman / Security</h6>
+                <p class="card-text">
+                </p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">Sainte-Maxime, France</small>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header">Summer 2014 - 2016</div>
+              <div class="card-body">
+                  <h4 class="card-title">Golf de Sainte-Maxime</h4>
+                    <h6 class="card-subtitle mb-2 text-muted clearfix">Assistant Golf Instructor</h6>
+                <p class="card-text"></p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">Sainte-Maxime, France</small>
+              </div>
+            </div>
+          </div>
       </div>
 
       <div class="card card-body bg-warning py-5 text-white">
-          <h3>What else do you do?</h3>
-          <p><em>Classified</em></p>
+          <h3>What else do I do?</h3>
+          <button class="btn btn-fluid btn-primary btn-lg my-3 showmap">Show Map</button>
+          <div id="map" class="hide"></div>
+          <div class="row">
+              <div class="col-md-4">
+                <p class="text-center">Familiar with the following programming languages:</p>
+                <ul>
+                        <li>Java</li>
+                        <li>Python</li>
+                        <li>C++</li>
+                        <li>Prolog</li>
+                      </ul>
+                  </div>
+                  <div class="col-md-4">
+                    <p class="text-center">Efficient and effective in using:</p>
+                    <ul>
+                      <li>Git</li>
+                      <li>Vim / Webstorm / VS Code</li>
+                      <li>Windows / MacOS / Linux (Ubuntu/Kali)</li>
+                      <li>MS Office / Libre Office</li>
+                    </ul>
+                  </div>
+                  <div class="col-md-4">
+                    <p class="text-center lead">I am always keen on learning new technologies to fill up the list above!</p>
+                    <p class="text-center display-1"><i class="fa fa-lightbulb-o" aria-hidden="true"></i></p>
+                  </div>
+                </div>
         </div>
     </div>
 
@@ -330,7 +414,7 @@
               </div>
               <div class="card-body">
                 <h4 class="card-title">PorfolioCeption</h4>
-                <p class="card-text project-desc">A porfolio within a profolio! This own website using Bootstrap's efficient grid system.</p>
+                <p class="card-text project-desc">A porfolio within a profolio! This website using Bootstrap's efficient grid system.</p>
                 <ul>
                   <li>HTML5</li>
                   <li>CSS</li>
@@ -448,5 +532,37 @@
         $(this).ekkoLightbox();
     });
   </script>
+            <script>
+                $('.showmap').click(function() {
+                    if ($('#map').hasClass('show')) {
+                      $('#map').removeClass('show');
+                      $('#map').slideUp(600, () => {
+                        $(this).text('Show Map');
+                      });
+                    } else {
+
+                      $('#map').fadeIn(400, () => {
+                        $(this).text('Hide Map');
+                      });
+                      $('#map').addClass('show');
+                      initialize();
+                    }
+                  
+                })
+                function initialize() {
+                  var middle = {lat: 30.433518, lng: 17.088249};
+                  var map = new google.maps.Map(document.getElementById('map'), {
+                    zoom: 2,
+                    center: middle
+                  });
+                  var marker = new google.maps.Marker({
+                    position: middle,
+                    map
+                  });
+                }
+              </script>
+              <script async defer
+              src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAw-c56RScPZLkGngJOHATGISB04z05Ypg">
+              </script>
 </body>
 </html>

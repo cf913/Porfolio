@@ -22,7 +22,7 @@ app.get('/', (req, res) => {
 })
 
 app.get('/download', function(req, res, next){
-    var file = __dirname + '/src/mockCV.txt' // Add actual RESUME.pdf
+    var file = __dirname + '/src/RESUME_Chad_Fallotin.pdf'
     res.download(file) // Set disposition and send it.
 })
 
