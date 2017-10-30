@@ -533,6 +533,7 @@
     });
   </script>
             <script>
+                let initialized = false;
                 $('.showmap').click(function() {
                     if ($('#map').hasClass('show')) {
                       $('#map').removeClass('show');
@@ -540,15 +541,19 @@
                         $(this).text('Show Map');
                       });
                     } else {
-
-                      $('#map').fadeIn(400, () => {
-                        $(this).text('Hide Map');
+                      $('#map').slideDown(600, () => {
+                        $('#map').fadeIn(400, () => {
+                          $(this).text('Hide Map');
+                          $('#map').addClass('show');
+                          if (initialized === false) {
+                            initialize();
+                            initialized = true;
+                          }
+                        });
                       });
-                      $('#map').addClass('show');
-                      initialize();
                     }
-                  
                 })
+                
                 function initialize() {
                   var middle = {lat: 30.433518, lng: 17.088249};
                   var map = new google.maps.Map(document.getElementById('map'), {
