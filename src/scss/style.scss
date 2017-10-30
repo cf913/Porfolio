@@ -356,6 +356,7 @@ body {
       animation: 2s fadeIn ease-out forwards;
       border: none;
       background: #222;
+      box-shadow: none;
 
 
       .card-img-on-hover {
@@ -373,6 +374,7 @@ body {
       img {
         opacity: 0;
       }
+      box-shadow: 0 0 15px 3px orange;
     }
 
     .card-body {

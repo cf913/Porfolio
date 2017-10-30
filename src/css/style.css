@@ -267,6 +267,7 @@ body {
     animation: 2s fadeIn ease-out forwards;
     border: none;
     background: #222;
+    box-shadow: none;
     transition: 0.2s ease-in-out; }
     #work .projects .card .card-img-on-hover {
       background-size: cover; }
@@ -274,7 +275,8 @@ body {
       opacity: 1;
       transition: 0.2s ease-in-out; }
   #work .projects .card:hover {
-    transform: scale(1.01); }
+    transform: scale(1.01);
+    box-shadow: 0 0 15px 3px orange; }
     #work .projects .card:hover img {
       opacity: 0; }
   #work .projects .card-body {
