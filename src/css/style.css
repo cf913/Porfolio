@@ -181,6 +181,31 @@ body {
   #resume .card-deck .card .card-body {
     font-size: 0.9em; }
 
+#resume .card-deck .card.orange {
+  border: 2px solid orange; }
+  #resume .card-deck .card.orange .card-header, #resume .card-deck .card.orange .card-footer {
+    border: orange;
+    background: orange; }
+
+#resume .legend-jobs li {
+  display: inline;
+  margin-left: 10px;
+  list-style-type: none;
+  font-size: 0.8em; }
+
+#resume .legend-jobs .fa {
+  position: relative;
+  display: inline-block;
+  margin-right: 3px;
+  top: 2px;
+  font-size: 1.5em; }
+
+#resume .legend-jobs .blue {
+  color: #0D55A1; }
+
+#resume .legend-jobs .orange {
+  color: orange; }
+
 #resume .edu {
   color: #f4f4f4;
   background: #061A40;

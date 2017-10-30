@@ -215,6 +215,7 @@ body {
     padding-right: 50px;
   }
 
+
   .card-deck .card {
     padding: 0;
     margin: 0 10px;
@@ -240,6 +241,42 @@ body {
     }
     .card-body {
       font-size: 0.9em;
+    }
+  }
+
+  .card-deck .card.orange {
+    border: 2px solid orange;
+
+    .card-header, .card-footer {
+      border: orange;
+      background: orange;
+    }
+  }
+
+  .legend-jobs {
+
+    li {
+      display: inline;
+      margin-left: 10px; 
+      list-style-type: none;
+      font-size: 0.8em;
+    }
+
+
+    .fa {
+      position: relative;
+      display: inline-block;
+      margin-right: 3px;
+      top: 2px;
+      font-size: 1.5em;
+    }
+
+    .blue {
+      color: #0D55A1; 
+    }
+
+    .orange {
+      color: orange;
     }
   }
 
