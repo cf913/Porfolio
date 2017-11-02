@@ -115,7 +115,7 @@ body {
 }
 
 
-// HOME //
+/******************************* HOME ****************************/
 
 .card {
   .asicon {
@@ -165,7 +165,7 @@ body {
     margin: 30px auto;
     padding-bottom: 40px;
     max-width: 500px; 
-    border-bottom: 3px solid #ddd;
+    border-bottom: 2px solid #ddd;
   }
 
   ul {
@@ -207,7 +207,7 @@ body {
   background-color: #033658;
 }
 
-// RESUME //
+/******************************* RESUME ****************************/
 
 #resume {
   .card {
@@ -332,6 +332,7 @@ body {
   .show {
     display: block;
   }
+
   #map {
     margin-bottom: 30px;
     width: 100%;
@@ -339,8 +340,17 @@ body {
     border-radius: 10px;
   }
 
+  .showmap {
+    cursor: pointer;
+  }
+
+  .showmap:active {
+    transform: scale(.99);
+  }
+
 }
 
+/******************************* PROJECTS ****************************/
 #work {
   .bg-warning{
     color: white;
@@ -396,7 +406,12 @@ body {
     }
   }
 }
+/****************************** CONTACT ************************************/
 
+.g-recaptcha {
+  margin: 15px 0;
+}
+/****************************** MEDIA QUERIES ******************************/
 
 @media(min-width:1199px){
   .port-item{
@@ -440,7 +455,7 @@ body {
   }
 }
 
-/* ANIMATIONS */
+/****************************** ANIMATIONS ******************************/
 @keyframes slideInFromLeft {
   0% {
     transform: translateX(-100%);
