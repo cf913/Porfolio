@@ -326,26 +326,58 @@ body {
     color: lightblue;
   }
 
-  .hide {
-    display: none;
-  }
-  .show {
-    display: block;
-  }
 
-  #map {
-    margin-bottom: 30px;
-    width: 100%;
-    height: 600px;
-    border-radius: 10px;
-  }
 
-  .showmap {
-    cursor: pointer;
-  }
+  #whatelse {
+    background: linear-gradient(to right, #005c97, #363795);
+    h2, h4 {
+      font-weight: 100;
+      letter-spacing: 0.1em;
+    }
+    h2 {
+      font-size: 3em;
+    }
 
-  .showmap:active {
-    transform: scale(.99);
+    p.description {
+      max-width: 500px;
+      margin: 10px auto;
+    }
+
+    .hide {
+      display: none;
+    }
+    .show {
+      display: block;
+    }
+  
+    #map {
+      margin: 20px auto;
+      width: 100%;
+      height: 600px;
+      border-radius: 10px;
+    }
+
+    .showmap {
+      cursor: pointer;
+    }
+  
+    .showmap:active {
+      transform: scale(.99);
+    }
+
+    ul.sports {
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    .books li {
+      color: lightblue;
+
+      em {
+        color: white;
+      }
+    }
+
   }
 
 }

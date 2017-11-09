@@ -246,23 +246,36 @@ body {
 #resume a.github {
   color: lightblue; }
 
-#resume .hide {
-  display: none; }
-
-#resume .show {
-  display: block; }
-
-#resume #map {
-  margin-bottom: 30px;
-  width: 100%;
-  height: 600px;
-  border-radius: 10px; }
-
-#resume .showmap {
-  cursor: pointer; }
-
-#resume .showmap:active {
-  transform: scale(0.99); }
+#resume #whatelse {
+  background: linear-gradient(to right, #005c97, #363795); }
+  #resume #whatelse h2, #resume #whatelse h4 {
+    font-weight: 100;
+    letter-spacing: 0.1em; }
+  #resume #whatelse h2 {
+    font-size: 3em; }
+  #resume #whatelse p.description {
+    max-width: 500px;
+    margin: 10px auto; }
+  #resume #whatelse .hide {
+    display: none; }
+  #resume #whatelse .show {
+    display: block; }
+  #resume #whatelse #map {
+    margin: 20px auto;
+    width: 100%;
+    height: 600px;
+    border-radius: 10px; }
+  #resume #whatelse .showmap {
+    cursor: pointer; }
+  #resume #whatelse .showmap:active {
+    transform: scale(0.99); }
+  #resume #whatelse ul.sports {
+    list-style-type: none;
+    padding-left: 0; }
+  #resume #whatelse .books li {
+    color: lightblue; }
+    #resume #whatelse .books li em {
+      color: white; }
 
 /******************************* PROJECTS ****************************/
 #work .bg-warning {

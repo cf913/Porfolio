@@ -24,7 +24,7 @@
                 <h1 class="display-4 profile-name">Chad Fallotin</h1>
                 <div class="links"><a target="_blank" href=""><i class="fa fa-facebook"></i></a></div>
                 <div class="links"><a target="_blank" title="GitHub" href="https://github.com/joeharper1000"><i class="fa fa-github"></i></a></div>
-                <div class="links"><a target="_blank" title="GitLab" href="https://gitlab.com/joeharper1000"><i class="fa fa-gitlab"></i></a></div>
+                <!-- <div class="links"><a target="_blank" title="GitLab" href="https://gitlab.com"><i class="fa fa-gitlab"></i></a></div> -->
                 <div class="links"><a target="_blank" href=""><i class="fa fa-steam"></i></a></div>
 
               </div>
@@ -210,6 +210,7 @@
               <p>Online courses</p>
               <p>Courses taken or in progress:</p>
               <ul class="text-white ul-edu">
+                <li><a target="_blank" href="https://www.udemy.com/the-complete-guide-to-running-a-web-development-business/">Running a Web Development Business: The Complete Guide</a></li>
                 <li><a target="_blank" href="https://www.udemy.com/the-web-developer-bootcamp/">The Web Developer Bootcamp</a></li>
                 <li><a target="_blank" href="https://www.udemy.com/the-advanced-web-developer-bootcamp/">The Advanced Web Developer Bootcamp</a></li>
                 <li><a target="_blank" href="https://www.udemy.com/understand-nodejs/">Learn and Understand NodeJS</a></li>
@@ -343,42 +344,70 @@
           </div>
       </div>
 
-      <div class="card card-body bg-warning py-5 text-white">
+      <div id="whatelse" class="card card-body bg-warning py-5 text-white">
           <h3>What else do I do?</h3>
-          <button class="btn btn-fluid btn-primary btn-lg my-3 showmap">Show Map</button>
-          <div id="map" class="hide"></div>
-          <div class="row">
-              <div class="col-md-4">
-                <p class="text-center">Familiar with the following programming languages:</p>
-                <ul>
-                        <li>Java</li>
-                        <li>Python</li>
-                        <li>C++</li>
-                        <li>Prolog</li>
+          <div class="row my-3">
+              <div class="col text-center">
+                  <h2 class="text-center my-3"><i class="fa fa-globe"></i> Travel</h2>
+                  <p class="lead text-center description">
+                      Over the years, I was fortunate enough to have traveled to many different countries.</p>
+                  <button class="btn btn-primary my-2 showmap">Show Map</button>
+                  <div id="map" class="hide"></div>
+              </div>
+          </div>
+          <div class="row my-3">
+              <div class="col-md-6">
+                  <h2 class="text-center my-3"><i class="fa fa-trophy"></i> Sports</h2>
+                  <p class="lead text-center">Enjoy a challenge</p>
+                      <ul class="sports text-center">
+                        <li>Fitness</li>
+                        <li>Golf</li>
+                        <li>Tennis</li>
+                        <li>Football</li> 
+                        <li>Basketball</li> 
+                        <li>Baseball</li> 
+                        <li>Volleyball</li> 
+                        <li>Table-Tennis</li>
+                        <li>Surf</li>
                       </ul>
-                  </div>
-                  <div class="col-md-4">
-                    <p class="text-center">Efficient and effective in using:</p>
-                    <ul>
-                      <li>Git</li>
-                      <li>Vim / Webstorm / VS Code</li>
-                      <li>Windows / MacOS / Linux (Ubuntu/Kali)</li>
-                      <li>MS Office / Libre Office</li>
+                  <h4 class="text-center my-3"><i class="fa fa-trophy"></i> eSports</h4>
+                  <ul class="sports text-center">
+                      <li>Rocket League</li>
                     </ul>
-                  </div>
-                  <div class="col-md-4">
-                    <p class="text-center lead">I am always keen on learning new technologies to fill up the list above!</p>
-                    <p class="text-center display-1"><i class="fa fa-lightbulb-o" aria-hidden="true"></i></p>
-                  </div>
-                </div>
+                  <h4 class="text-center my-3"><i class="fa fa-music"></i> Music</h4>
+                  <p class="text-center">I can play the piano, and am currently learning how to play the guitar!</p>
+              </div>
+              <div class="col-md-6">
+                  <h2 class="text-center my-3"><i class="fa fa-book"></i> Learning</h2>
+                  <p class="lead text-center description">
+                     Some of the books I have recently read:</p>
+                     <ul class="books">
+                       <li><em>Elon Musk</em>, Ashlee Vance</li>
+                       <li><em>Big Data: [...]</em>, Kenneth Cukier and Viktor Mayer-Schönberger</li>
+                       <li><em>Zero to One</em>, Peter Thiel</li>
+                       <li><em>Think and Grow Rich</em>, Napoleon Hill</li>
+                       <li><em>The Lean Startup</em>, Eric Ries</li>
+                       <li><em>The Elements of User Experience</em>, Jesse James Garrett</li>
+                       <li><em>The Power of Habits</em>, Charles Duhigg</li>
+                       <li><em>Thinking, Fast and Slow</em>, Daniel Kahneman</li>
+                       <li><em>Psycho-Cybernetics</em>, Maxwell Maltz</li>
+                       <li><em>The Power of Now</em>, Eckhart Tolle</li>
+                       <li><em>Sapiens: A brief History of Mankind</em>, Yuval Noah Harari</li>
+                       <li><em>Homo Deus: A Brief History of Tomorrow</em>, Yuval Noah Harari</li>
+                       <li><em>Trading in the Zone</em>, Mark Douglas</li>
+                       <li><em>The Art and Science of Technical Analysis: [...]</em>, Adam Grimes</li>
+                       <li><em>Encyclopedia of Chart Patterns</em>, Thomas N. Bulkowski</li>
+                       <li><em>Japanese Candlestick Charting Techniques</em>, Steve Nison</li>
+                     </ul>
+              </div>
+          </div>
         </div>
     </div>
 
     <!-- WORK -->
     <div id="work" class="collapse">
       <div class="card card-body bg-warning py-5 text-center">
-        <h3>My Portfolio</h3>
-        <p>This page will grow in the near future</p>
+        <h3>My Projects</h3>
       </div>
 
       <div class="card card-body py-5 projects">
@@ -488,7 +517,7 @@
     <div id="contact" class="collapse">
       <div class="card card-body bg-danger text-white py-5">
         <h2>Contact</h2>
-        <p>Feel free to ask me any questions. I can help you in your project in all from the UI mockups, back-end and front-end web development to fixing the design and deployment.</p>
+        <p>Feel free to ask me any questions. I will reply within 24 hours!</p>
 
         <form id="contactForm" method="POST" action='/send'>
           <div class="form-group">
@@ -553,43 +582,88 @@
     // }
 
   </script>
-            <script>
-                let initialized = false;
-                $('.showmap').click(function() {
-                    if ($('#map').hasClass('show')) {
-                      $('#map').removeClass('show');
-                      $('#map').slideUp(600, () => {
-                        $(this).text('Show Map');
-                      });
-                    } else {
-                      $('#map').slideDown(600, () => {
-                        $('#map').fadeIn(400, () => {
-                          $(this).text('Hide Map');
-                          $('#map').addClass('show');
-                          if (initialized === false) {
-                            initialize();
-                            initialized = true;
-                          }
-                        });
-                      });
-                    }
-                })
 
-                function initialize() {
-                  var middle = {lat: 30.433518, lng: 17.088249};
-                  var map = new google.maps.Map(document.getElementById('map'), {
-                    zoom: 2,
-                    center: middle
-                  });
-                  var marker = new google.maps.Marker({
-                    position: middle,
-                    map
-                  });
-                }
-              </script>
-              <script async defer
-              src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAw-c56RScPZLkGngJOHATGISB04z05Ypg">
-              </script>
+<script>
+  // GOOGLE MAPS
+  let initialized = false;
+  $('.showmap').click(function() {
+      if ($('#map').hasClass('show')) {
+        $('#map').removeClass('show');
+        $('#map').slideUp(600, () => {
+          $(this).text('Show Map');
+        });
+      } else {
+        $('#map').slideDown(600, () => {
+          $('#map').fadeIn(400, () => {
+            $(this).text('Hide Map');
+            $('#map').addClass('show');
+            if (initialized === false) {
+              initialize();
+              initialized = true;
+            }
+          });
+        });
+      }
+  })
+
+  function initialize() {
+    let locations = [
+      { code: 'Costa Rica', lat: 9.748917,	lng: -83.753428 },
+      { code: 'Panama', lat: 8.537981, lng:	-80.782127},
+      { code: 'Mexico', lat: 23.634501, lng:	-102.552784 },
+      { code: 'United Arab Emirates', lat: 23.424076, lng: 53.847818 },
+      { code: 'Australia', lat: -25.274398, lng: 133.775136 },
+      { code: 'Austria', 	lat: 47.516231, lng: 14.550072 },
+      { code: 'Belgium', lat: 50.503887, lng: 4.469936 },
+      { code: 'Canada', lat: 56.130366, lng: -106.346771 },
+      { code: 'Czech Republic', lat:49.817492, lng: 15.472962 },
+      { code: 'Egypt', lat: 26.820553, lng: 30.802498 },
+      { code: 'Spain', lat: 40.463667, lng: -3.74922 },
+      { code: 'France', lat: 46.227638, lng: 2.213749 },
+      { code: 'United Kingdom', lat: 55.378051, lng: -3.435973 },
+      { code: 'Greece', lat: 39.074208, lng: 21.824312 },
+      { code: 'Hong Kong', lat: 22.396428, lng: 114.109497 },
+      { code: 'Indonesia', lat: -0.789275, lng: 113.921327 },
+      { code: 'India', lat: 20.593684, lng: 78.96288 },
+      { code: 'Italy', 	lat: 41.87194, lng: 12.56738 },
+      { code: 'Japan', lat: 36.204824, lng: 138.252924 },
+      { code: 'Cambodia', lat: 12.565679, lng: 104.990963 },
+      { code: 'Morocco', lat: 31.791702, lng: -7.09262 },
+      { code: 'Monaco', lat: 43.750298, lng: 7.412841 },
+      { code: 'Maldives', lat: 3.202778, lng: 73.22068 },
+      { code: 'Nepal', lat: 28.394857, lng: 84.124008 },
+      { code: 'Oman', lat: 21.512583, lng: 55.923255	},
+      { code: 'Philippines', lat: 12.879721, lng: 121.774017 },
+      { code: 'Romania', lat: 45.943161, lng: 24.96676 },
+      { code: 'Russia', lat: 61.52401, lng: 105.318756 },
+      { code: 'Singapore', lat: 1.352083, lng: 103.819836 },
+      { code: 'Senegal', lat: 14.497401, lng: -14.452362 },
+      { code: 'Thailand', lat: 15.870032, lng: 100.992541 },
+      { code: 'Tunisia', lat: 33.886917, lng: 9.537499 },
+      { code: 'Turkey', lat: 38.963745, lng: 35.243322 },
+      { code: 'United States', lat: 37.09024, lng: -95.712891 },
+      { code: 'Vatican City', lat: 41.902916, lng: 12.453389 },
+      { code: 'Tanzania', lat: -6.369028, lng: 34.888822}
+  ]
+
+    var middle = {lat: 30.433518, lng: 17.088249};
+    var map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 2,
+      center: middle
+    });
+    locations.map((val) => {
+      var marker = new google.maps.Marker({
+        position: { lat: val.lat, lng: val.lng },
+        map: map,
+        title: val.code,
+        animation: google.maps.Animation.DROP,
+      });
+    })
+  }
+</script>
+<script async defer
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAw-c56RScPZLkGngJOHATGISB04z05Ypg">
+</script>
               <!-- <script src="https://www.google.com/recaptcha/api.js" async defer></script> -->
 </body>
 </html>
