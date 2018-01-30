@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
 body {
   background: #111;
   background: url('../img/set.jpg') center fixed no-repeat;
-  background-size: cover; 
+  background-size: cover;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 .container.main{
@@ -284,7 +286,7 @@ body {
     color: #f4f4f4;
     background: #061A40;
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 5px;
     animation: 1s fadeIn;
   }
 
@@ -313,7 +315,7 @@ body {
     justify-content: center;
 
     a {
-      transition: 0.2s;
+      transition: 0.1s;
     }
     a:hover {
       transform: scale(1.1);
@@ -406,9 +408,9 @@ body {
       }
       img {
         opacity: 1;
-        transition: 0.2s ease-in-out;
+        transition: 0.1s ease-in-out;
       }
-      transition: 0.2s ease-in-out;
+      transition: 0.1s ease-in-out;
     }
 
     .card:hover {
@@ -416,18 +418,18 @@ body {
       img {
         opacity: 0;
       }
-      box-shadow: 0 0 15px 3px orange;
+      box-shadow: 0 0 15px 3px rgb(100, 250, 255);
     }
 
     .card-body {
       h4 {
         font-weight: 200;
       }
-      padding: 20px;
+      padding: 20px 20px 0;
     }
     .project-desc {
       border-bottom: 1px solid white; 
-      padding-bottom: 20px;
+      padding-bottom: 10px;
     }
 
     .card-footer {

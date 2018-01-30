@@ -1,7 +1,9 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro");
 body {
   background: #111;
   background: url("../img/set.jpg") center fixed no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  font-family: 'Source Sans Pro', sans-serif; }
 
 .container.main {
   padding: 0;
@@ -212,7 +214,7 @@ body {
   color: #f4f4f4;
   background: #061A40;
   padding: 20px;
-  border-radius: 10px;
+  border-radius: 5px;
   animation: 1s fadeIn; }
 
 #resume ul.ul-edu {
@@ -236,7 +238,7 @@ body {
   align-items: center;
   justify-content: center; }
   #resume .edu-logo a {
-    transition: 0.2s; }
+    transition: 0.1s; }
   #resume .edu-logo a:hover {
     transform: scale(1.1); }
 
@@ -290,24 +292,24 @@ body {
     border: none;
     background: #222;
     box-shadow: none;
-    transition: 0.2s ease-in-out; }
+    transition: 0.1s ease-in-out; }
     #work .projects .card .card-img-on-hover {
       background-size: cover; }
     #work .projects .card img {
       opacity: 1;
-      transition: 0.2s ease-in-out; }
+      transition: 0.1s ease-in-out; }
   #work .projects .card:hover {
     transform: scale(1.01);
-    box-shadow: 0 0 15px 3px orange; }
+    box-shadow: 0 0 15px 3px #64faff; }
     #work .projects .card:hover img {
       opacity: 0; }
   #work .projects .card-body {
-    padding: 20px; }
+    padding: 20px 20px 0; }
     #work .projects .card-body h4 {
       font-weight: 200; }
   #work .projects .project-desc {
     border-bottom: 1px solid white;
-    padding-bottom: 20px; }
+    padding-bottom: 10px; }
   #work .projects .card-footer {
     background-color: #161616; }
     #work .projects .card-footer a {
