@@ -42,14 +42,22 @@ body {
   transition-delay: 0s; }
 
 #main-header .profile-pic {
-  display: flex;
+  opacity: 0.9;
   min-height: 300px;
-  background: url("../img/profile.jpg") center;
+  background: url("../img/default.jpg") center no-repeat;
   background-size: cover;
-  transition: 0.5s; }
+  transition: 0.2s; }
 
 #main-header .profile-pic:hover {
-  opacity: 0.8; }
+  opacity: 1;
+  cursor: pointer;
+  background: url("../img/hover.jpg") center no-repeat;
+  background-size: cover; }
+
+#main-header .profile-pic:active {
+  opacity: 1;
+  background: url("../img/active.jpg") center no-repeat;
+  background-size: cover; }
 
 #main-header .port-item {
   width: 30%;
