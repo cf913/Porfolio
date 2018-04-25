@@ -44,15 +44,13 @@ body {
 #main-header .profile-pic {
   opacity: 0.9;
   min-height: 300px;
-  background: url("../img/default2.jpg") center no-repeat;
-  background-size: cover;
-  transition: 0.2s; }
+  background: url("../img/me2.jpg") center no-repeat;
+  background-size: cover; }
 
 #main-header .profile-pic:hover {
   opacity: 1;
   cursor: pointer;
-  background: url("../img/hover2.jpg") center no-repeat;
-  background-size: cover; }
+  background-image: url("../img/hover2.jpg"); }
 
 #main-header .profile-pic:active {
   opacity: 1;
